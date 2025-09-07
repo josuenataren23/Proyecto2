@@ -323,10 +323,7 @@ body{
         transition-delay: calc(.15s * var(--i));
     }
 
-    .portada{
-        background-attachment: fixed;
-        background-size:auto;
-    }
+    
 
     .conten-intro, .subnav{
         width: 90%;
