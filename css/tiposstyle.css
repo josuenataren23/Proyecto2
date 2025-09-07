@@ -68,6 +68,9 @@
 
 }
 @media (max-width: 768px){
+    .conten-tipos{
+    width: 90%;
+    }
     .conten-tipos h3{
         font-size: 1.5;
     }    
