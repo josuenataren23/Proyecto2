@@ -46,7 +46,7 @@
     justify-content:baseline;
     align-items: center;  
     padding: 2rem;
-    background-color: rgb(25, 61, 201);
+    background-color: rgba(25, 61, 201);
     border-radius: 24px;
     gap: 2rem;
 }
