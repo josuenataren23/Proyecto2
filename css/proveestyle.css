@@ -1,0 +1,95 @@
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    font-family:'Times New Roman', Times, serif;
+}
+.conten-prov{
+    width: 80%;
+    margin-top: 5vh;
+    display: block;
+    padding: 5%;
+    background-color: rgb(45, 48, 52);
+    color: #fff;
+    border: 2px solid rgb(81, 86, 93);
+    border-radius: 30px;
+}
+.conten-prov p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.conten-prov hr{
+    margin-block: 2vh;
+    height: .4vh;
+    background-color: rgb(81, 86, 93);
+    border-style: none;
+}
+.cards{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.cards .card-prov{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    gap: 1rem;
+    position: relative;
+    background: url(../img/prov-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.cards .card-prov::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(21, 21, 21, .7);
+    backdrop-filter: blur(5px);
+    z-index: 0;
+}
+
+.card-prov .logo{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.card-prov .logo img{
+    width: 4rem;
+}
+.card-prov .descrip{
+    width: 100%;
+    height: 30vh;
+    z-index: 1;
+}
+.card-prov .descrip p{
+    font-size: 1.2rem;
+    
+}
+
+
+/*Responsive*/
+@media (max-width: 992px){
+    .cards{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media (max-width: 768px){
+    .cards{
+    grid-template-columns: repeat(1,1fr);
+}
+}
